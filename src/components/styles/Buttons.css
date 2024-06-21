@@ -1,0 +1,12 @@
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-quote {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: var(--theme);
+    border: none;
+    color: white;
+}

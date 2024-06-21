@@ -1,0 +1,14 @@
+.app-footer {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+#author-link {
+    text-decoration: none;
+}
+
+#author-link:visited {
+    color: white;
+}

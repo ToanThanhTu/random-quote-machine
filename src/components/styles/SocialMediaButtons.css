@@ -1,0 +1,16 @@
+.social-media-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: var(--theme);
+    font-size: 2rem;
+    color: white;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
