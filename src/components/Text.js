@@ -1,6 +1,6 @@
 import "./styles/Text.css";
 
-function Text({text}) {
+function Text({ text }) {
     return <div id="text">{text}</div>;
 }
 

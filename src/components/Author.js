@@ -1,6 +1,6 @@
 import "./styles/Author.css";
 
-function Author({author}) {
+function Author({ author, isFading }) {
     return <div id="author">- {author}</div>;
 }
 

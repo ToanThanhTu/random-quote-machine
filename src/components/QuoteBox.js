@@ -39,8 +39,8 @@ function QuoteBox() {
         if (loadedQuotes.length > 0) {
             const randomQuote = loadedQuotes[Math.floor(Math.random() * (quotes.length))];
             setQuoteObj(randomQuote);
+            setColor();
         }
-        setColor();
     }
 
     function setColor() {

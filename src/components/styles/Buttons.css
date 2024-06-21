@@ -9,4 +9,5 @@
     background-color: var(--theme);
     border: none;
     color: white;
+    transition: background-color 2s ease;
 }
