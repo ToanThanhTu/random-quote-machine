@@ -1,43 +1,49 @@
+/* Define a root CSS variable for theme color */
 :root {
   --theme: #16a085;
 }
 
+/* Reset padding, margin, and box-sizing for all elements */
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
-  /* border: 0.5px solid black; */
+  box-sizing: inherit; /* Inherit box-sizing from parent elements */
+  /* border: 0.5px solid black; */ /* Uncomment for debugging to see element boundaries */
 }
 
+/* Ensure full height for html and body elements */
 html, body {
   height: 100%;
 }
 
+/* Set base styles for html element */
 html {
-  min-width: 60rem;
+  min-width: 60rem; /* Minimum width to prevent layout breaking on small screens */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
+    sans-serif; /* Fallback font stack */
+  -webkit-font-smoothing: antialiased; /* Improve the readability of fonts on macOS and iOS */
+  -moz-osx-font-smoothing: grayscale; /* Improve the readability of fonts on Firefox macOS */
+  font-size: 62.5%; /* Set base font-size to 10px for easier rem calculations (62.5% of 16px default) */
   color: var(--theme);
 }
 
+/* Set base styles for body element */
 body {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Border-box model for including padding and border in element's total width and height */
   font-size: 1.6rem;
-  display: flex;
+  display: flex; /* Use flexbox for layout to center the app */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--theme);
-  transition: background-color 2s ease;
+  transition: background-color 2s ease; /* Smooth transition for background color change */
 }
 
+/* Set styles for code elements */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace; /* Font stack for monospaced typefaces */
 }

@@ -1,13 +1,16 @@
+/* Style for the container that holds all buttons 
+    using flex layout to position the New Quote and Social Media Buttons left and right ends*/
 .buttons-container {
     display: flex;
     justify-content: space-between;
 }
 
+/* Style for the "New Quote" button */
 #new-quote {
     padding: 1rem 2rem;
     border-radius: 5px;
     background-color: var(--theme);
-    border: none;
+    border: none; /* Remove the default border */
     color: white;
-    transition: background-color 2s ease;
+    transition: background-color 2s ease; /* Animate the background color change over 2 seconds smoothly */
 }

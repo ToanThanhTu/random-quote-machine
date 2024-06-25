@@ -1,17 +1,20 @@
+/* Style for the container that holds social media buttons
+    using grid 2 columns layout */
 .social-media-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.5rem;
 }
 
+/* General style for each social media button */
 .button {
     border-radius: 5px;
     background-color: var(--theme);
     font-size: 2rem;
     color: white;
     width: 4rem;
-    display: flex;
+    display: flex; /* Use flexbox layout to center button's content */
     align-items: center;
     justify-content: center;
-    transition: background-color 2s ease;
+    transition: background-color 2s ease; /* Animate the background color change over 2 seconds smoothly */
 }
