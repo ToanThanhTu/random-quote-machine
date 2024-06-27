@@ -14,3 +14,8 @@
     color: white;
     transition: background-color 2s ease; /* Animate the background color change over 2 seconds smoothly */
 }
+
+/* Style for the "New Quote" button when hovered */
+#new-quote:hover {
+    cursor: pointer;
+}
